@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const axisoWithAuth = () => {
+const axiosWithAuth = () => {
   const token = localStorage.getItem("token");
 
   return axios.create({
@@ -9,7 +9,7 @@ const axisoWithAuth = () => {
   })
 }
 
-export default axisoWithAuth;
+export default axiosWithAuth;
 
 //Task List:
 //Build and export a function used to send in our authorization token ✅
