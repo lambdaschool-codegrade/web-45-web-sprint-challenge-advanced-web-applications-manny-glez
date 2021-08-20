@@ -136,3 +136,50 @@ button {
   display:inline;
   width: 100px;
 }
+
+.my-login {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: white;
+}
+
+.my-login input {
+  padding: 5px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  border: solid lightgrey 1.5px;
+}
+
+.my-login input:focus {
+  outline: none;
+  border: solid 1.5px rgb(93, 199, 231);
+}
+
+.my-login label {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between;
+  color: black;
+}
+
+.my-login button {
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgb(93, 199, 231);
+}
+
+.my-login button:hover, button:focus {
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  0 2px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  cursor: pointer;
+}
