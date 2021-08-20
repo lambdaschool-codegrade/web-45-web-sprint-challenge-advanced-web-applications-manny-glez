@@ -12,7 +12,7 @@ const Logout = (props) => {
 
   }, [])
 
-  return(<div></div>);
+  return null;
 }
 
 export default Logout;

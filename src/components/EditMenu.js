@@ -15,7 +15,9 @@ const EditMenu = (props) => {
   }
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
+    
     saveEdit(editColor);
   }
 
@@ -24,7 +26,9 @@ const EditMenu = (props) => {
   }
 
   return(<form id="edit_menu" data-testid="edit_menu" onSubmit={handleSubmit}>
+
       <legend>edit color</legend>
+
       <label htmlFor="colorName">color name:
         <input
           name="colorName"
@@ -49,6 +53,7 @@ const EditMenu = (props) => {
         <button type="submit" id="submit" data-testid="submit_button">save</button>
         <button data-testid="cancel_button" onClick={handleCancel}>cancel</button>
       </div>
+
   </form>);
 }
 
