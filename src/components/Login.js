@@ -14,8 +14,7 @@ const Login = () => {
 
   const history = useHistory();
 
-  const error = "";
-  //replace with error state
+  const [error, setError] = useState(false);
 
   const handleChange = (evt) => {
     const { name, value } = evt.target
@@ -41,6 +40,9 @@ const Login = () => {
         localStorage.setItem("token", res.data.payload)
         history.push("/bubbles")
       })
+      .catch(err =>{
+        setError(true)
+      })
   }
 
   return (
@@ -60,8 +62,7 @@ const Login = () => {
 
         </form>
       </div>
-
-      <p id="error" className="error">{error}</p>
+      { error && <p id="error" className="error">Incorrect username or password</p> }
     </div>
   );
 };
